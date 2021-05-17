@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.main.MainActivity">
+
+  <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"
+  />
+
+
+
+  <Button
+    android:id="@+id/btn_checkPublic"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:layout_marginTop="200sp"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:layout_below="@+id/inpt_cep"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_marginHorizontal="20dp"
+    android:text="Checar Rota Pública"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+
+    android:textSize="18sp"
+    app:strokeColor="@color/purple_500"
+  />
+
+  <Button
+    android:id="@+id/btn_checkPrivate"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:layout_marginTop="20sp"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:layout_below="@+id/inpt_cep"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_marginHorizontal="20dp"
+    android:text="Checar Rota Privada"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+
+    android:textSize="18sp"
+    app:strokeColor="@color/teal_700"
+    app:rippleColor="@color/teal_700"
+  />
+
+
+
+</LinearLayout>
